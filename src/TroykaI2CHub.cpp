@@ -22,7 +22,7 @@ void TroykaI2CHub::begin() {
     setBusChannel(DEFAULT_CHANNEL);
 }
 
-void TroykaI2CHub::setBusChannel(uint8_t channel) {
+bool TroykaI2CHub::setBusChannel(uint8_t channel) {
     if (channel >= COUNT_CHANNEL) {
         return false;
     }
