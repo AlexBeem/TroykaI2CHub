@@ -25,7 +25,7 @@ public:
     TroykaI2CHub(uint8_t i2cHubAddr = DEFAULT_I2C_HUB_ADDRESS);
     ~TroykaI2CHub();
     void begin();
-    void setBusChannel(uint8_t channel);
+    bool setBusChannel(uint8_t channel);
 private:
     uint8_t _i2cHubAddr;
 };
